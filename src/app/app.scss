@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,36 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('../assets/fonts/ChampagneLimousines.woff2') format('woff2'), url('../assets/fonts/ChampagneLimousines.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('../assets/fonts/ChampagneLimousines-Bold.woff2') format('woff2'), url('../assets/fonts/ChampagneLimousines-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('../assets/fonts/ChampagneLimousines-BoldItalic.woff2') format('woff2'), url('../assets/fonts/ChampagneLimousines-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('../assets/fonts/ChampagneLimousines-Italic.woff2') format('woff2'), url('../assets/fonts/ChampagneLimousines-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Champagne & Limousines';
+    margin: 0px;
+    overflow: hidden;
+}
