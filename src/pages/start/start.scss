@@ -7,12 +7,22 @@ page-start {
         background-size: cover;
         overflow: hidden;
         text-align: center;
-        h1 {
+        img {
             position: relative;
+            top: 38%;
+            transform: translateY(250%);
+            width: 60%;
+        }
+        h1 {
+            @include fontSFD(200);
+            position: relative;
+            top: 33%;
+            font-size: 4.9vw;
             color: white;
-            top: 53%;
-            font-family: 'Champagne & Limousines';
-            font-size: 5.9vw;
+        }
+        button {
+            position: relative;
+            top: 43%;
         }
     }
 }

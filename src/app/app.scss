@@ -40,8 +40,80 @@
     font-style: italic;
 }
 
-body {
+@font-face {
+    font-family: 'San Francisco Display';
+    src: url('../assets/fonts/SanFranciscoDisplay-Bold.woff2') format('woff2'), url('../assets/fonts/SanFranciscoDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Display';
+    src: url('../assets/fonts/SanFranciscoDisplay-Thin.woff2') format('woff2'), url('../assets/fonts/SanFranciscoDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Display';
+    src: url('../assets/fonts/SanFranciscoDisplay-Regular.woff2') format('woff2'), url('../assets/fonts/SanFranciscoDisplay-Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Text';
+    src: url('../assets/fonts/SanFranciscoText-Regular.woff2') format('woff2'), url('../assets/fonts/SanFranciscoText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin fontChampagne($fontWeight: normal,
+$fontStyle: normal) {
     font-family: 'Champagne & Limousines';
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+}
+
+@mixin fontSFD($fontWeight: normal,
+$fontStyle: normal) {
+    font-family: 'San Francisco Display';
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+}
+
+@mixin fontSFText {
+    font-family: 'San Francisco Text';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    @include fontSFD(100);
     margin: 0px;
     overflow: hidden;
+}
+
+.btn {
+    @include fontSFD();
+    height: 60px;
+    width: 80%;
+    font-size: 4.8vw;
+    margin: 5px auto;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: none;
+}
+
+.btn_clear {
+    @extend .btn;
+}
+
+.toolbar-content-md {
+    margin-bottom: 10%;
+}
+
+.toolbar-background-md {
+    background-color: transparent;
+    border: none;
 }

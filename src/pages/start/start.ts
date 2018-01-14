@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { LoginPage } from './../login/login';
 
 
 @Component({
@@ -8,11 +9,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class StartPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams) { }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad StartPage');
+  onEnter() {
+    this.navCtrl.push(LoginPage);
   }
 
 }
