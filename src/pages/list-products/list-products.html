@@ -1,10 +1,110 @@
-<ion-content padding>
-    <ion-toolbar>
-        <ion-buttons end>
-            <button ion-button icon-only color="royal">
-              <ion-icon name="search"></ion-icon>
-            </button>
+<ion-header>
+    <ion-toolbar color="white">
+        <ion-buttons start left>
+            <button ion-button icon-only (click)="toggleMenu()">
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+            <button ion-button icon-only>
+        <ion-icon name="ios-search-outline"></ion-icon>
+      </button>
         </ion-buttons>
-        <ion-title>Scrolls with the content</ion-title>
+
+        <ion-title>
+            <img src="assets/imgs/logo_oops.png" alt="logo">
+        </ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only color="naranja">
+        <ion-icon name="md-heart-outline"></ion-icon>
+      </button>
+            <button ion-button icon-only color="verde">
+        <ion-icon name="ios-cart-outline"></ion-icon>
+      </button>
+        </ion-buttons>
+
     </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+        <ion-row>
+            <ion-col class="title_products">
+                <h1>Zapatos hombre</h1>
+            </ion-col>
+            <ion-col class="title_products right">
+                <h1>230 Productos</h1>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col class="borde_right borde_bottom">
+                <button ion-button clear icon-only color="naranja">
+                        <ion-icon name="md-heart-outline"></ion-icon>
+                      </button>
+                <img src="assets/imgs/z1.png" alt="z1">
+
+                <div>
+                    <ion-icon name="ios-pin-outline"></ion-icon>
+                    <span>Bogotá</span>
+                </div>
+                <div class="detalles_producto">
+                    <h1 color="rojo">Valentino</h1>
+                    <h2 color="rojo">Zapatos Uniessi</h2>
+                    <p color="primary">$250.000</p>
+                </div>
+            </ion-col>
+            <ion-col class="borde_bottom padding_left">
+                <button ion-button clear icon-only color="naranja">
+                    <ion-icon name="md-heart-outline"></ion-icon>
+                  </button>
+                <img src="assets/imgs/z2.png" alt="z2">
+
+                <div>
+                    <ion-icon name="ios-pin-outline"></ion-icon>
+                    <span>Bogotá</span>
+                </div>
+                <div class="detalles_producto">
+                    <h1 color="rojo">Valentino</h1>
+                    <h2 color="rojo">Zapatos Uniessi</h2>
+                    <p color="primary">$250.000</p>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="borde_right borde_bottom">
+                <button ion-button clear icon-only color="naranja">
+                    <ion-icon name="md-heart-outline"></ion-icon>
+                  </button>
+                <img src="assets/imgs/z3.png" alt="z3">
+
+                <div>
+                    <ion-icon name="ios-pin-outline"></ion-icon>
+                    <span>Bogotá</span>
+                </div>
+                <div class="detalles_producto">
+                    <h1 color="rojo">Valentino</h1>
+                    <h2 color="rojo">Zapatos Uniessi</h2>
+                    <p color="primary">$250.000</p>
+                </div>
+            </ion-col>
+            <ion-col class="borde_bottom padding_left">
+                <button ion-button clear icon-only color="naranja">
+                    <ion-icon name="md-heart-outline"></ion-icon>
+                  </button>
+                <img src="assets/imgs/z4.png" alt="z4">
+
+                <div>
+                    <ion-icon name="ios-pin-outline"></ion-icon>
+                    <span>Bogotá</span>
+                </div>
+                <div class="detalles_producto">
+                    <h1 color="rojo">Valentino</h1>
+                    <h2 color="rojo">Zapatos Uniessi</h2>
+                    <p color="primary">$250.000</p>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
 </ion-content>

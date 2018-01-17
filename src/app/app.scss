@@ -80,6 +80,7 @@ $fontStyle: normal) {
     font-family: 'San Francisco Display';
     font-weight: $fontWeight;
     font-style: $fontStyle;
+    letter-spacing: 2px;
 }
 
 @mixin fontSFText {
