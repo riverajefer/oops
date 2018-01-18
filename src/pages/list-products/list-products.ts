@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { ProductDetailsPage } from '../product-details/product-details';
 
 @IonicPage()
 @Component({
@@ -16,6 +17,12 @@ export class ListProductsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListProductsPage');
+  }
+
+  goToProductDetails() {
+    console.log('goToProductDetails');
+
+    this.navCtrl.push(ProductDetailsPage);
   }
 
   toggleMenu() {

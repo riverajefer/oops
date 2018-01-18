@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar color="white">
+        <ion-buttons start left>
+            <button ion-button icon-only (click)="toggleMenu()">
+      <ion-icon name="md-menu"></ion-icon>
+    </button>
+            <button ion-button icon-only>
+      <ion-icon name="ios-search-outline"></ion-icon>
+    </button>
+        </ion-buttons>
+
+        <ion-title>
+            <img src="assets/imgs/logo_oops.png" alt="logo">
+        </ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only color="naranja">
+      <ion-icon name="md-heart-outline"></ion-icon>
+    </button>
+            <button ion-button icon-only color="verde">
+      <ion-icon name="ios-cart-outline"></ion-icon>
+    </button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <button ion-button clear icon-only color="naranja">
+                    <ion-icon name="md-heart-outline"></ion-icon>
+                  </button>
+            </ion-col>
+            <ion-col style="text-align:right;">
+                <button ion-button clear icon-only color="rojo" (click)="onGoBack()">
+                    <ion-icon name="ios-close-outline" style="font-size:12vw;"></ion-icon>
+                  </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <div class="product_details">
+        <img src="assets/imgs/z1.png" alt="z1">
+        <div class="product_description">
+            <div>
+                <ion-icon name="ios-pin-outline"></ion-icon>
+                <span>Bogotá</span>
+            </div>
+            <h1 color="rojo">Valentino</h1>
+            <h2 color="rojo">Zapatos Uniessi</h2>
+            <p color="primary">$250.000</p>
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique vitae provident quas quos error ex laboriosam tempore commodi deleniti ea officia odio. <br>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="position_bottom">
+        <button class="btn_add" ion-button full color="verde" large (click)="onAddProduct()">
+                Agregar al carrito
+              </button>
+    </div>
+
+</ion-content>

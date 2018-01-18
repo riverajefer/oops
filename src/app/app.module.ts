@@ -8,9 +8,11 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { StartPage } from '../pages/start/start';
 import { ListProductsPage } from '../pages/list-products/list-products';
+import { ProductDetailsPage } from './../pages/product-details/product-details';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { GetProductPage } from '../pages/get-product/get-product';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     LoginPage,
     StartPage,
-    ListProductsPage
+    ListProductsPage,
+    ProductDetailsPage,
+    GetProductPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     LoginPage,
     StartPage,
-    ListProductsPage
+    ListProductsPage,
+    ProductDetailsPage,
+    GetProductPage
   ],
   providers: [
     StatusBar,
