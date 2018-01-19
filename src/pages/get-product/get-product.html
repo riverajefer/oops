@@ -6,7 +6,46 @@
     </ion-toolbar>
 </ion-header>
 
+<ion-content>
+    <div class="get_product">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-7 offset-3>
+                    <img src="assets/imgs/obtener.png" alt="obtener" width="35%">
+                    <h1>Obtener producto</h1>
+                </ion-col>
+                <ion-col col-1 style="text-align:right;">
+                    <button ion-button clear icon-only color="rojo" (click)="onGoBack()">
+                        <ion-icon name="ios-close-outline" style="font-size:12vw;"></ion-icon>
+                      </button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
 
-<ion-content padding>
 
+        <ion-grid>
+            <ion-row>
+                <ion-col col-5 offset-1>
+                    <p><b>Valentino</b></p>
+                    <p>Zapatos</p>
+                    <p>Descripción corta</p>
+                </ion-col>
+                <ion-col col-6 style="text-align:right;">
+                    <img src="assets/imgs/z1.png" alt="z1" width="60%">
+                </ion-col>
+            </ion-row>
+            <button ion-button color="rojo" full class="open_box">
+              Abrir taquilla
+            </button>
+        </ion-grid>
+        <hr>
+    </div>
 </ion-content>
+
+<ion-footer no-shadow>
+    <ion-toolbar>
+        <img src="assets/imgs/soporte.png" alt="soporte" width="20%">
+        <p> Soporte <br> Atención al publico <br> 555-5555
+        </p>
+    </ion-toolbar>
+</ion-footer>

@@ -27,7 +27,7 @@ export class ListProductsPage {
 
   toggleMenu() {
     console.log('toggleMenu');
-    this.menuCtrl.toggle();
+    // this.menuCtrl.toggle();
   }
 
 }

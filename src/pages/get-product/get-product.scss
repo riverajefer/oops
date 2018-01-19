@@ -8,4 +8,44 @@ page-get-product {
         height: 100%;
         text-align: center;
     }
+    .get_product {
+        text-align: center;
+        h1 {
+            color: map-get($colors, rojo);
+            font-size: 5vw;
+            margin: 0px;
+            @include fontSFD(bold);
+            margin-bottom: 5%;
+        }
+        p {
+            text-align: left;
+            margin: 0px;
+            padding: 0px;
+            font-size: 4vw;
+        }
+    }
+    button.open_box {
+        text-transform: none;
+        @include fontSFD(200);
+        color: #fff;
+    }
+    ion-footer {
+        border: none;
+        ion-toolbar {
+            border: none;
+            text-align: center;
+            p {
+                font-size: 4vw;
+                margin: 0px;
+                padding: 0px;
+            }
+            img {
+                margin: 0px;
+                padding: 0px;
+            }
+            .toolbar-content {
+                margin-bottom: 5%;
+            }
+        }
+    }
 }
