@@ -34,8 +34,9 @@
                     <img src="assets/imgs/z1.png" alt="z1" width="60%">
                 </ion-col>
             </ion-row>
-            <button ion-button color="rojo" full class="open_box">
-              Abrir taquilla
+            <button ion-button color="rojo" full class="open_box" (click)="onToogleBox()">
+              <span *ngIf="!stateDoor">Abrir taquilla</span>
+              <span *ngIf="stateDoor">Cerrar taquilla</span>
             </button>
         </ion-grid>
         <hr>
