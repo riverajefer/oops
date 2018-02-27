@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { StartPage } from '../pages/start/start';
 import { ListProductsPage } from '../pages/list-products/list-products';
 import { ProductDetailsPage } from './../pages/product-details/product-details';
+import { RegisterPage } from './../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -26,7 +27,8 @@ import { ServicesProvider } from '../providers/services/services';
     StartPage,
     ListProductsPage,
     ProductDetailsPage,
-    GetProductPage
+    GetProductPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { ServicesProvider } from '../providers/services/services';
     StartPage,
     ListProductsPage,
     ProductDetailsPage,
-    GetProductPage
+    GetProductPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,

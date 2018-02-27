@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { LoginPage } from './../login/login';
+import { RegisterPage } from './../register/register';
 
 
 @Component({
@@ -15,6 +16,10 @@ export class StartPage {
 
   onEnter() {
     this.navCtrl.push(LoginPage);
+  }
+
+  onRegister() {
+    this.navCtrl.push(RegisterPage);
   }
 
 }
