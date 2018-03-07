@@ -16,7 +16,7 @@ export class MyApp {
 
   rootPage: any = StartPage;
 
-  pages: Array<{ title: string, component: any }>;
+  pages: Array<{ title: string, component: any, img: string }>;
 
   constructor(
     public platform: Platform,
@@ -26,10 +26,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Login', component: LoginPage },
-      { title: 'start', component: StartPage }
+      { title: 'Perfil', component: StartPage, img: 'perfil.png' },
+      { title: 'Administrador de taquilla', component: StartPage, img: 'admin.png' },
+      { title: 'Productos comprados', component: StartPage, img: 'productos_comprados.png' },
+      { title: 'Favoritos', component: StartPage, img: 'favoritos.png' },
+      { title: 'Buscar producto', component: StartPage, img: 'buscar_producto.png' },
+      { title: 'Leer código', component: StartPage, img: 'leer_codigo.png' },
+      { title: 'Contáctenos', component: StartPage, img: 'contacto.png' }
     ];
 
   }

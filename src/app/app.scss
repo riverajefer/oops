@@ -118,3 +118,31 @@ body {
     background-color: transparent;
     border: none;
 }
+
+.item-md ion-thumbnail {
+    min-width: 30px;
+    min-height: 40px;
+}
+
+.item-md ion-thumbnail ion-img,
+.item-md ion-thumbnail img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu_principal {
+    background-color: #111C35;
+}
+
+.item-menu {
+    background-color: #111C35;
+    color: #fff;
+}
+
+.list-md .item-block .item-inner {
+    border: none;
+}
+
+.item-md.item-block .item-inner {
+    border: none;
+}

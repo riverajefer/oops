@@ -1,18 +1,24 @@
 <ion-menu [content]="content">
     <ion-header>
         <ion-toolbar>
-            <ion-title>Menú</ion-title>
+            <ion-title>
+                <img src="assets/imgs/logo_start.png" width="40%">
+            </ion-title>
         </ion-toolbar>
     </ion-header>
 
-    <ion-content>
-        <!--
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+    <ion-content class="menu_principal">
+
+        <ion-list class="list-menu">
+            <button menuClose class="item-menu" ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
+        <ion-thumbnail item-end>
+          <img src="assets/imgs/menu/{{p.img}}" width="20px">
+      </ion-thumbnail>
       </button>
-    </ion-list>
-    -->
+
+        </ion-list>
+
     </ion-content>
 
 </ion-menu>
