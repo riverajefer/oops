@@ -26,6 +26,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Home', component: HomePage, img: 'perfil.png' },
       { title: 'Perfil', component: StartPage, img: 'perfil.png' },
       { title: 'Administrador de taquilla', component: StartPage, img: 'admin.png' },
       { title: 'Productos comprados', component: StartPage, img: 'productos_comprados.png' },

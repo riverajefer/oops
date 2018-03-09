@@ -1,3 +1,4 @@
+import { MenuComponent } from './../../components/menu/menu';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { LoginPage } from './../login/login';
