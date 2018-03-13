@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { PayPage } from './../pay/pay';
 import { ProductDetailsPage } from '../product-details/product-details';
+
 
 @IonicPage()
 @Component({
@@ -25,9 +27,13 @@ export class ListProductsPage {
     this.navCtrl.push(ProductDetailsPage);
   }
 
+  goToPayProduct() {
+    this.navCtrl.push(PayPage);
+  }
+
   toggleMenu() {
     console.log('toggleMenu');
-    // this.menuCtrl.toggle();
+    this.menuCtrl.toggle();
   }
 
 }

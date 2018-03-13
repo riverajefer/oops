@@ -20,8 +20,7 @@ export class ProductDetailsPage {
   }
 
   toggleMenu() {
-    console.log('toggleMenu');
-   // this.menuCtrl.toggle();
+    this.menuCtrl.toggle();
   }
 
   onGoBack() {

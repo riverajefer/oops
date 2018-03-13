@@ -13,7 +13,6 @@ export class HomePage {
   ) {
   }
 
-
   toggleMenu() {
     console.log('toggleMenu');
     this.menuCtrl.toggle();

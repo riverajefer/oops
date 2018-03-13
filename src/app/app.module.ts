@@ -16,6 +16,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GetProductPage } from '../pages/get-product/get-product';
 import { ServicesProvider } from '../providers/services/services';
+import { PayPage } from '../pages/pay/pay';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ServicesProvider } from '../providers/services/services';
     ListProductsPage,
     ProductDetailsPage,
     GetProductPage,
-    RegisterPage
+    RegisterPage,
+    PayPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { ServicesProvider } from '../providers/services/services';
     ListProductsPage,
     ProductDetailsPage,
     GetProductPage,
-    RegisterPage
+    RegisterPage,
+    PayPage
   ],
   providers: [
     StatusBar,
