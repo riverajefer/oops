@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
+import { ListProductsPage } from './../list-products/list-products';
+
 
 @Component({
   selector: 'page-home',
@@ -16,6 +18,10 @@ export class HomePage {
   toggleMenu() {
     console.log('toggleMenu');
     this.menuCtrl.toggle();
+  }
+
+  goToListProducts() {
+    this.navCtrl.push(ListProductsPage);
   }
 
 }

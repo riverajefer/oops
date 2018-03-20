@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from './../home/home';
 
 @IonicPage()
 @Component({
@@ -16,5 +17,10 @@ export class RegisterPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterPage');
   }
+
+  onGoToProducts() {
+    this.navCtrl.push(HomePage);
+  }
+
 
 }

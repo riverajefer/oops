@@ -8,4 +8,26 @@ page-pay {
         height: 100%;
         text-align: center;
     }
+    .pay_product {
+        text-align: center;
+        h1 {
+            color: map-get($colors, rojo);
+            font-size: 5vw;
+            margin: 0px;
+            @include fontSFD(bold);
+            margin-bottom: 5%;
+        }
+        p {
+            text-align: left;
+            margin: 0px;
+            padding: 0px;
+            font-size: 4vw;
+        }
+    }
+    .form_pay {
+        text-align: center;
+        p {
+            @include fontSFD();
+        }
+    }
 }

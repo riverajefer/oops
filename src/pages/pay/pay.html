@@ -8,5 +8,41 @@
 
 
 <ion-content padding>
+    <div class="pay_product">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-7 offset-3>
+                    <img src="assets/imgs/icon_pagar.png" alt="pagar" width="35%">
+                    <h1>Pagar</h1>
+                </ion-col>
+                <ion-col col-1 style="text-align:right;">
+                    <button ion-button clear icon-only color="rojo" (click)="onGoBack()">
+                        <ion-icon name="ios-close-outline" style="font-size:12vw;"></ion-icon>
+                      </button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <div class="form_pay">
+        <p>Datos de tu tarjeta de crédito</p>
+
+        <ion-list inset>
+            <ion-item>
+                <ion-label stacked>Numero de tarjeta</ion-label>
+                <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>Fecha de expiración</ion-label>
+                <ion-input type="date"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>Datos del titular de la tarjeta</ion-label>
+                <ion-input type="text"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button ion-button color="naranja2" block round (click)="onGetProduct()">Pago Seguro</button>
+
+    </div>
 
 </ion-content>

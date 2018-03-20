@@ -7,6 +7,10 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { StartPage } from '../pages/start/start';
 import { ListPage } from '../pages/list/list';
+import { ProfilePage } from './../pages/profile/profile';
+import { FavoritesPage } from './../pages/favorites/favorites';
+import { PurchasedProductsPage } from '../pages/purchased-products/purchased-products';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -27,13 +31,13 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage, img: 'perfil.png' },
-      { title: 'Perfil', component: StartPage, img: 'perfil.png' },
-      { title: 'Administrador de taquilla', component: StartPage, img: 'admin.png' },
-      { title: 'Productos comprados', component: StartPage, img: 'productos_comprados.png' },
-      { title: 'Favoritos', component: StartPage, img: 'favoritos.png' },
-      { title: 'Buscar producto', component: StartPage, img: 'buscar_producto.png' },
-      { title: 'Leer código', component: StartPage, img: 'leer_codigo.png' },
-      { title: 'Contáctenos', component: StartPage, img: 'contacto.png' }
+      { title: 'Perfil', component: ProfilePage, img: 'perfil.png' },
+      { title: 'Administrador de taquilla', component: HomePage, img: 'admin.png' },
+      { title: 'Productos comprados', component: PurchasedProductsPage, img: 'productos_comprados.png' },
+      { title: 'Favoritos', component: HomePage, img: 'favoritos.png' },
+      { title: 'Buscar producto', component: HomePage, img: 'buscar_producto.png' },
+      { title: 'Leer código', component: HomePage, img: 'leer_codigo.png' },
+      { title: 'Contáctenos', component: HomePage, img: 'contacto.png' }
     ];
 
   }

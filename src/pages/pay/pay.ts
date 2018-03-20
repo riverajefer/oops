@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GetProductPage } from '../get-product/get-product';
 
 
 @IonicPage()
@@ -9,11 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PayPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams)
+    {  }
+
+  onGoBack() {
+    this.navCtrl.pop()
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PayPage');
+  onGetProduct() {
+    this.navCtrl.push(GetProductPage)
   }
-
 }

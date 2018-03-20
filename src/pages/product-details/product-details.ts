@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { GetProductPage } from '../get-product/get-product';
+import { PayPage } from '../pay/pay';
 
 @IonicPage()
 @Component({
@@ -30,5 +31,10 @@ export class ProductDetailsPage {
   onAddProduct(){
     this.navCtrl.push(GetProductPage);
   }
+
+  onGoToPayProduct() {
+    this.navCtrl.push(PayPage);
+  }
+
 
 }

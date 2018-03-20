@@ -23,12 +23,7 @@ export class ListProductsPage {
 
   goToProductDetails() {
     console.log('goToProductDetails');
-
     this.navCtrl.push(ProductDetailsPage);
-  }
-
-  goToPayProduct() {
-    this.navCtrl.push(PayPage);
   }
 
   toggleMenu() {

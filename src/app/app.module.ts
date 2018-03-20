@@ -11,13 +11,14 @@ import { StartPage } from '../pages/start/start';
 import { ListProductsPage } from '../pages/list-products/list-products';
 import { ProductDetailsPage } from './../pages/product-details/product-details';
 import { RegisterPage } from './../pages/register/register';
+import { PurchasedProductsPage } from '../pages/purchased-products/purchased-products';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GetProductPage } from '../pages/get-product/get-product';
 import { ServicesProvider } from '../providers/services/services';
 import { PayPage } from '../pages/pay/pay';
-
+import { ProfilePage } from '../pages/profile/profile';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { PayPage } from '../pages/pay/pay';
     ProductDetailsPage,
     GetProductPage,
     RegisterPage,
-    PayPage
+    PayPage,
+    ProfilePage,
+    PurchasedProductsPage
   ],
   imports: [
     BrowserModule,
@@ -48,14 +51,17 @@ import { PayPage } from '../pages/pay/pay';
     ProductDetailsPage,
     GetProductPage,
     RegisterPage,
-    PayPage
+    PayPage,
+    ProfilePage,
+    PurchasedProductsPage
   ],
   providers: [
     StatusBar,
     HttpClientModule,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ServicesProvider
+    ServicesProvider,
+
   ]
 })
 export class AppModule {}

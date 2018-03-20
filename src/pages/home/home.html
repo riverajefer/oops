@@ -2,11 +2,11 @@
     <ion-toolbar color="white">
         <ion-buttons start left>
             <button ion-button icon-only (click)="toggleMenu()">
-      <ion-icon name="md-menu"></ion-icon>
-    </button>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
             <button ion-button icon-only>
-      <ion-icon name="ios-search-outline"></ion-icon>
-    </button>
+        <ion-icon name="ios-search-outline"></ion-icon>
+      </button>
         </ion-buttons>
 
         <ion-title>
@@ -15,31 +15,53 @@
 
         <ion-buttons end>
             <button ion-button icon-only color="naranja">
-      <ion-icon name="md-heart-outline"></ion-icon>
-    </button>
+        <ion-icon name="md-heart-outline"></ion-icon>
+      </button>
             <button ion-button icon-only color="verde">
-      <ion-icon name="ios-cart-outline"></ion-icon>
-    </button>
+        <ion-icon name="ios-cart-outline"></ion-icon>
+      </button>
         </ion-buttons>
 
     </ion-toolbar>
 </ion-header>
 
 
-<ion-content>
+<ion-content class="card-background-page">
     <ion-grid>
         <ion-row>
-            <ion-col col-12>
-                <img src="/assets/imgs/home/product1.jpg" alt="producto">
+            <ion-col col-12 (click)="goToListProducts()">
+                <img src="assets/imgs/home/product1.jpg" />
+                <div class="card-title">$580.000</div>
+                <div class="card-subtitle">Century <br> Black Matte</div>
+                <div class="add-fav">
+                    <button ion-button clear icon-only color="naranja">
+                        <ion-icon name="md-heart-outline"></ion-icon>
+                      </button>
+                </div>
             </ion-col>
         </ion-row>
         <ion-row>
-            <ion-col col-6 style="padding-right:2px">
-                <img src="/assets/imgs/home/product2.jpg" alt="producto">
+            <ion-col col-6 style="padding-right:1px">
+                <img src="assets/imgs/home/product2.jpg" />
+                <div class="card-title">$440.000</div>
+                <div class="card-subtitle">Oakley <br> Cuero</div>
+                <div class="add-fav">
+                    <button ion-button clear icon-only color="naranja">
+                        <ion-icon name="md-heart-outline"></ion-icon>
+                      </button>
+                </div>
             </ion-col>
-            <ion-col col-6>
-                <img src="/assets/imgs/home/product3.jpg" alt="producto">
+            <ion-col col-6 style="padding-left:1px">
+                <img src="assets/imgs/home/product3.jpg" />
+                <div class="card-title">$56.000</div>
+                <div class="card-subtitle">Jacob´s <br> Creek</div>
+                <div class="add-fav">
+                    <button ion-button clear icon-only color="naranja">
+                        <ion-icon name="md-heart-outline"></ion-icon>
+                      </button>
+                </div>
             </ion-col>
         </ion-row>
     </ion-grid>
+
 </ion-content>

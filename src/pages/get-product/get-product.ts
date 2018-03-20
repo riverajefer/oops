@@ -25,8 +25,9 @@ export class GetProductPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad GetProductPage');
   }
+
   onGoBack() {
-    this.navCtrl.push(ListProductsPage);
+    this.navCtrl.pop()
   }
 
   onToogleBox() {
